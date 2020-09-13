@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/custom.css" id="theme">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2>FMEA.lite</h2>
+				<p>&lt;pitch&gt;</p>
+				<!-- <pre><code data-trim data-noescape>
+							&lt;pitch&gt;&lt;/pitch&gt;
+							</code></pre>
+						</code></pre> -->
+			</section>
+			<section>
+				<section>
+					<p>Picture the following scenario...</p>
+					<img class="fragment" style="width:80%;" src="images/bike.png" alt="">
+					<p class="fragment">... there are always risks with the design.</p>
+				</section>
+				<section>
+					<p>So where do you spend your time most effectively?</p>
+					<img style="height: 400px" src="images/priotize.png" alt="">
+				</section>
+			</section>
+			<section>
+				<section>
+					<h3>
+						<span style="display: inline-block;" class="fragment fade-right"><b>F</b>ailure</span>
+						<span style="display: inline-block;" class="fragment fade-right"><b>M</b>ode</span>
+						<span style="display: inline-block;" class="fragment fade-right"><b>E</b>ffect</span>
+						<span style="display: inline-block;" class="fragment fade-right"><b>A</b>nalysis</span>
+					</h3>
+				</section>
+				<section>
+					<p>Today, the experience is painful...</p>
+					<img style="height: 400px"src="images/FMEAmeeting.png" alt="">
+				</section>
+				<section>
+					<!-- <section data-background-video="video/comp.mp4" data-background-video-loop data-background-video-muted> -->
+						<p>Outdated tools or spreadsheets.</p>
+						<video data-autoplay src="video/comp.mp4"></video>
+						<div class="fragment" style="position: absolute; width: 100%; bottom: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.5); color: #fff; padding: 10px; text-align: center;">
+							<p> ...yuck!!!</p>
+						</div>
+				</section>
+			</section>
+				<section>
+					<section>
+						<p>So how can we improve this?</p>
+					</section>
+					<section>
+						<p>Live collaboration</p>
+						<img style="height: 400px" src="images/FailureModesCollaborate.png" alt="">
+					</section>
+					<section>
+						<p>Focused workflows</p>
+						<img style="height: 400px" src="images/FocusedWorkflows.png" alt="">
+					</section>
+					<section>
+						<p>Time saving exports</p>
+						<img style="height: 400px"src="images/TimeSavingExports.png" alt="">
+					</section>
+				</section>
+				<section>
+					<section>
+						<p>Why I believe this will be a good project...</p>
+						<ul>
+							<li class="fragment" data-fragment-index="1">Live collaboration</li>
+							<li class="fragment" data-fragment-index="2">Ruby libraries</li>
+							<ul>
+								<li class="fragment" data-fragment-index="2">e.g. "wicked_pdf" or "prawn"</li>
+							</ul>
+							<li class="fragment" data-fragment-index="3">Clear value proposition and user group</li>
+							<ul>
+								<li class="fragment" data-fragment-index="3">potential future development</li>
+							</ul>
+						</ul>
+					</section>
+					<section>
+						<p>&lt;/pitch&gt;</p>
+					</section>
+				</section>
+
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
